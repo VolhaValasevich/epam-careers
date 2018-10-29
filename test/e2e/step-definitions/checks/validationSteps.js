@@ -6,7 +6,7 @@ const memory = browser.params.MEMORY;
 const logger = require('../util/logger').logger;
 
 Then(/^"([^"]*)" should( not)? be visible$/, async (alias, notArg) => {
-    alias = await memory.parseString(alias);
+    alias = memory.parseString(alias);
     logger.info(`I check if [${alias}] is visible`);
     notArg = notArg ? ' not' : '';
     let result = await step.isElementPresent(alias);
@@ -14,8 +14,8 @@ Then(/^"([^"]*)" should( not)? be visible$/, async (alias, notArg) => {
 });
 
 Then(/^Count of "([^"]*)" should( not)? be "([^"]*)"$/, async (alias, notArg, expectedNumber) => {
-    alias = await memory.parseString(alias);
-    expectedNumber = await memory.parseString(expectedNumber);
+    alias = memory.parseString(alias);
+    expectedNumber = memory.parseString(expectedNumber);
     logger.info(`I check if count of [${alias}] is ${expectedNumber}`);
     notArg = notArg ? ' not' : '';
     let result = await step.getNumberOfElements(alias);
@@ -29,8 +29,8 @@ Then(/^Count of "([^"]*)" should( not)? be "([^"]*)"$/, async (alias, notArg, ex
 });
 
 Then(/^Text of "([^"]*)" should( not)? contain "([^"]*)"$/, async (alias, notArg, textToContain) => {
-    alias = await memory.parseString(alias);
-    textToContain = await memory.parseString(textToContain);
+    alias = memory.parseString(alias);
+    textToContain = memory.parseString(textToContain);
     logger.info(`I check if text of [${alias}] contains [${textToContain}]`);
     notArg = notArg ? ' not' : '';
     let elementText = await step.getText(alias);
@@ -43,8 +43,8 @@ Then(/^Text of "([^"]*)" should( not)? contain "([^"]*)"$/, async (alias, notArg
 });
 
 Then(/^Text of "([^"]*)" should( not)? equal "([^"]*)"$/, async (alias, notArg, textToContain) => {
-    alias = await memory.parseString(alias);
-    textToContain = await memory.parseString(textToContain);
+    alias = memory.parseString(alias);
+    textToContain = memory.parseString(textToContain);
     logger.info(`I check if text of [${alias}] equals [${textToContain}]`);
     notArg = notArg ? ' not' : '';
     let elementText = await step.getText(alias);
@@ -57,9 +57,9 @@ Then(/^Text of "([^"]*)" should( not)? equal "([^"]*)"$/, async (alias, notArg, 
 });
 
 Then(/^Attribute "([^"]*)" of "([^"]*)" should( not)? be "([^"]*)"$/, async (attributeName, alias, notArg, expectedAttribute) => {
-    attributeName = await memory.parseString(attributeName);
-    alias = await memory.parseString(alias);
-    expectedAttribute = await memory.parseString(expectedAttribute);
+    attributeName = memory.parseString(attributeName);
+    alias = memory.parseString(alias);
+    expectedAttribute = memory.parseString(expectedAttribute);
     logger.info(`I check if ${attributeName} of [${alias}] is [${expectedAttribute}]`);
     notArg = notArg ? ' not' : '';
     let attribute = await step.getAttribute(alias, attributeName);
@@ -72,7 +72,7 @@ Then(/^Attribute "([^"]*)" of "([^"]*)" should( not)? be "([^"]*)"$/, async (att
 });
 
 Then(/^Page title should( not)? be "([^"]*)"$/, async (notArg, text) => {
-    text = await memory.parseString(text);
+    text = memory.parseString(text);
     logger.info(`I check if page title is [${text}]`);
     notArg = notArg ? ' not' : '';
     let pageTitle = await browser.getTitle();

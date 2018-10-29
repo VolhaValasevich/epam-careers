@@ -1,0 +1,10 @@
+{
+    "name": "Careers Page",
+    "url": "/careers/job-listings/job",
+    "selector": "html",
+    "children": {
+        "Job Description": {
+            "ref": ["components", "jobDescription.json"]
+        }
+    }
+}

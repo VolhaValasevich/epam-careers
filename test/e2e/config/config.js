@@ -25,10 +25,11 @@ exports.config = {
     },
     params: {
         PAGE_OBJECT_DIRECTORY: './test/e2e/po',
-        BASE_URL: 'https://www.sandisk.com/',
+        BASE_URL: 'https://www.epam.com/',
         MEMORY: require('../step-definitions/util/memory')
     },
     onPrepare: () => {
-        browser.manage().window().setSize(1000, 800);
+        browser.manage().window().maximize();
+        browser.ignoreSynchronization = true;
     }
 };
