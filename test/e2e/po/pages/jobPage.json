@@ -3,8 +3,11 @@
     "url": "/careers/job-listings/job",
     "selector": "html",
     "children": {
-        "Job Description": {
-            "ref": ["components", "jobDescription.json"]
+        "Job Header": {
+            "ref": ["components", "jobDescription", "header.json"]
+        },
+        "About Job": {
+            "ref": ["components", "jobDescription", "jobDescription.json"]
         }
     }
 }

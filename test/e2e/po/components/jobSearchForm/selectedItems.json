@@ -1,0 +1,9 @@
+{
+    "isCollection": true,
+    "selector": "ul.selected-items > li",
+    "children": {
+        "Unselect Button": {
+            "selector": "button.unselect-tag"
+        }
+    }
+}

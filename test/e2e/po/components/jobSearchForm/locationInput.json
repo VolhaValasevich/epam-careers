@@ -1,0 +1,26 @@
+{
+    "selector": "div.recruiting-search__location",
+    "children": {
+        "Selected Location": {
+            "selector": "span.select2-selection__rendered"
+        },
+        "Locations Dropdown": {
+            "selector": "span.select2-dropdown",
+            "children": {
+                "Countries": {
+                    "isCollection": true,
+                    "selector": "#select2-new_form_job_search_1445745853_copy-location-results > li.select2-results__option",
+                    "children": {
+                        "Name": {
+                            "selector": "strong"
+                        },
+                        "Cities": {
+                            "isCollection": true,
+                            "selector": "li"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

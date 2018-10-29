@@ -1,3 +1,23 @@
 {
-    "selector": "none" 
+    "selector": "section.search-result",
+    "children": {
+        "Heading": {
+            "selector": "h1.search-result__heading"
+        },
+        "Sorting Items": {
+            "isCollection": true,
+            "selector": "ul.search-result__sorting-list > li",
+            "children": {
+                "Input": {
+                    "selector": "input.search-result__sorting-radio"
+                },
+                "Label": {
+                    "selector": "label.search-result__sorting-label"
+                }
+            }
+        },
+        "Search Results": {
+            "ref": ["components", "searchResults", "searchResults.json"]
+        }
+    } 
 }

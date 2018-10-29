@@ -1,0 +1,33 @@
+{
+    "selector": "div.job-search__departments",
+    "children": {
+        "Label": {
+            "selector": "div.selected-params",
+            "children": {
+                "Default Label": {
+                    "selector": "div.default-label"
+                },
+                "Counter": {
+                    "selector": "div.selected-label > span.counter"
+                }
+            }
+        },
+        "Dropdown": {
+            "selector": "div.multi-select-dropdown",
+            "children": {
+                "Skills": {
+                    "isCollection": true,
+                    "selector": "li",
+                    "children": {
+                        "Checkbox": {
+                            "selector": "input[type = 'checkbox']"
+                        },
+                        "Label": {
+                            "selector": "span.checkbox-custom-label"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

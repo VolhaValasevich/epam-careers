@@ -15,4 +15,6 @@ When(/^I open "([^"]*)" url$/, (url) => {
     return browser.get(url);
 });
 
-When(/^I open base url$/, async)
+When(/^I open base url$/, () => {
+    return browser.get(browser.params.BASE_URL)
+})

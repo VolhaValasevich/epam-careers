@@ -1,0 +1,12 @@
+{
+    "selector": "header.recruiting-page__header",
+    "children": {
+        "Name": {
+            "selector": "h1"
+        },
+        "Locations": {
+            "isCollection": true,
+            "selector": "ul.recruiting-page__location > li"
+        }
+    }
+}

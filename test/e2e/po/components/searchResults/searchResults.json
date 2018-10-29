@@ -1,0 +1,29 @@
+{
+    "isCollection": true,
+    "selector": "article.search-result__item",
+    "children": {
+        "Name": {
+            "selector": "a.search-result__item-name"
+        },
+        "Location": {
+            "selector": "strong.search-result__location"
+        },
+        "Types": {
+            "isCollection": true,
+            "selector": "ul.search-result__item-types > li"
+        },
+        "Description": {
+            "selector": "p.search-result__item-description"
+        },
+        "Apply Button": {
+            "selector": "a.search-result__item-apply"
+        },
+        "Share Button": {
+            "selector": "button.search-result__share-button"
+        },
+        "Social Network Links": {
+            "isCollection": true,
+            "selector": "a.search-result__social-link"
+        }
+    }
+}

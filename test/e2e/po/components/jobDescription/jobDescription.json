@@ -1,0 +1,21 @@
+{
+    "selector": "section.section__content",
+    "children": {
+        "Job ID": {
+            "selector": "strong.vacancy-page__id"
+        },
+        "Description": {
+            "selector": "div.recruiting-page__top-description"
+        },
+        "Summary": {
+            "selector": "div.section__content-holder"
+        },
+        "Learn More Button": {
+            "selector": "a.vacancy-page__local-site-button"
+        },
+        "Social Media Links": {
+            "isCollection": true,
+            "selector": "button.utility-menu__share-button"
+        }
+    }  
+}
