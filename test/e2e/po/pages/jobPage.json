@@ -1,6 +1,6 @@
 {
     "name": "Careers Page",
-    "url": "/careers/job-listings/job",
+    "url": "/job-listings/job",
     "selector": "html",
     "children": {
         "Job Header": {

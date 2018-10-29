@@ -1,12 +1,12 @@
 {
     "name": "Careers Page",
-    "url": "/careers/job-listings",
+    "url": "/job-listings",
     "selector": "html",
     "children": {
         "Job Search Form": {
             "ref": ["components", "jobSearchForm", "searchForm.json"]
         },
-        "Search Results": {
+        "Search Results Section": {
             "ref": ["components", "searchResults", "searchResultsSection.json"]
         }
     }

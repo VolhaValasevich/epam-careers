@@ -25,7 +25,7 @@ exports.config = {
     },
     params: {
         PAGE_OBJECT_DIRECTORY: './test/e2e/po',
-        BASE_URL: 'https://www.epam.com/',
+        BASE_URL: 'https://www.epam.com/careers',
         MEMORY: require('../step-definitions/util/memory')
     },
     onPrepare: () => {
