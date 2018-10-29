@@ -1,5 +1,5 @@
 # sandisk-framework
-test framework for www.sandisk.com
+test framework for www.epam.com/careers
 
 ## Installation
 ```
