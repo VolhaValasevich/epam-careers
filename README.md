@@ -1,4 +1,4 @@
-# sandisk-framework
+# epam-careers
 test framework for www.epam.com/careers
 
 ## Installation
