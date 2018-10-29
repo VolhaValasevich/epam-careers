@@ -1,0 +1,11 @@
+{
+    "selector": "form.search-container",
+    "children": {
+        "Footer Search Bar": {
+            "selector": "#search-box-footer"
+        },
+        "Footer Search Submit Button": {
+            "selector": "input.go"
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "name": "Search Page",
+    "url": "/tools/search",
+    "selector": "html",
+    "children": {
+        "Header": {
+            "ref": ["components", "header", "header.json"]
+        },
+        "Search Section": {
+            "ref": ["components", "searchSection.json"]
+        },
+        "Search Results Section": {
+            "ref": ["components", "searchResultsSection.json"]
+        },
+        "Copyright Footer": {
+            "ref": ["components", "footer", "footerCopyright.json"]
+        },
+        "On Top Button": {
+            "ref": ["components", "onTopButton.json"]
+        }
+    }
+}

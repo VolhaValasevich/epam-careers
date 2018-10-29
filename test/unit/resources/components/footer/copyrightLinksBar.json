@@ -1,0 +1,12 @@
+{
+    "selector": "div.sd-bg-red",
+    "children": {
+        "Copyright Links": {
+            "isCollection": true,
+            "selector": "ul.footer-links > li > a"
+        },
+        "Footer Logo": {
+            "selector": "img.footer-logo"
+        }
+    }
+}

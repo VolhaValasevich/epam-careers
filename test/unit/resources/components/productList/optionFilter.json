@@ -1,0 +1,21 @@
+{
+    "isCollection": true,
+    "selector": "div.search-option",
+    "children": {
+        "Header": {
+            "selector": "h4[ng-bind-html = 'list.title']"
+        },
+        "Options": {
+            "isCollection": true,
+            "selector": "span > label",
+            "children": {
+                "Button": {
+                    "selector": "input[type = 'radio']"
+                },
+                "Label": {
+                    "selector": "span[ng-bind-html = 'item.title']"
+                }
+            }
+        }
+    }
+}

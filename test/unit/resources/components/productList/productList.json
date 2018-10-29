@@ -1,0 +1,17 @@
+{
+    "selector": "div.productlist",
+    "children": {
+        "Product Chooser": {
+            "ref": ["components", "productList", "productChooser.json"]
+        },
+        "Results Bar": {
+            "ref": ["components", "productList", "resultsBar.json"]
+        },
+        "Filter Panel": {
+            "ref": ["components", "productList", "filterPanel.json"]
+        },
+        "Results Panel": {
+            "ref": ["components", "productList", "resultsPanel.json"]
+        }
+    }
+}

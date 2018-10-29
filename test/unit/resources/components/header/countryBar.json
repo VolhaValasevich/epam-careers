@@ -1,0 +1,26 @@
+{
+    "selector": "#country",
+    "children": {
+        "Country Links": {
+            "isCollection": true,
+            "selector": "div.top-menu #bs-example-navbar-collapse-1 a"
+        },
+        "Retail Icon": {
+            "selector": "span.icon-retail"
+        },
+        "Global Icon": {
+            "selector": "span.icon-global"
+        },
+        "Search Container": {
+            "selector": "form.search-container",
+            "children": {
+                "Search Input": {
+                    "selector": "#search-box"
+                },
+                "Search Icon": {
+                    "selector": "span.icon-search3"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "selector": "div.checkboxes",
+    "children": {
+        "Distributors Checkbox": {
+            "selector": "#distributors-commercial-"
+        },
+        "VAR/Resellers Checkbox": {
+            "selector": "#var-resellers"
+        },
+        "Representatives Checkbox": {
+            "selector": "#representatives"
+        }
+    }
+}

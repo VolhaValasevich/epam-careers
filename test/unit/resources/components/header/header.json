@@ -1,0 +1,11 @@
+{
+    "selector": "header",
+    "children": {
+        "Country Bar": {
+            "ref": ["components", "header", "countryBar.json"]
+        },
+        "Navigation Bar": {
+            "ref": ["components", "header", "navigationBar.json"]
+        }
+    }
+}

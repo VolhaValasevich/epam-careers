@@ -1,0 +1,20 @@
+{
+    "selector": "div.product-display > div:nth-of-type(2)",
+    "children": {
+        "Results Number": {
+            "selector": "li > strong.ng-binding"
+        },
+        "Selected Category": {
+            "selector": "span[ng-bind-html = 'selectedObj.family.title']"
+        },
+        "Remove Category Button" : {
+            "selector": "li[ng-if = 'selectedObj.family'] > i.icon-close"
+        },
+        "Selected Option": {
+            "selector": "span[ng-bind-html = 'selectedObj.option.title']"
+        },
+        "Remove Option Button" : {
+            "selector": "li[ng-if = 'selectedObj.option'] > i.icon-close"
+        }
+    }
+}

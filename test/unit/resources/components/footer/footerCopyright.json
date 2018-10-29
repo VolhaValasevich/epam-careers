@@ -1,0 +1,16 @@
+{
+    "selector": "footer.copyright",
+    "children": {
+        "Copyright Links Bar": {
+            "ref": ["components", "footer", "copyrightLinksBar.json"]
+        },
+        "Copyright Text Bar": {
+            "selector": "div.copyright-text",
+            "children": {
+                "Copyright Text": {
+                    "selector": "span.footer-copyright"
+                }
+            }
+        }
+    }
+}

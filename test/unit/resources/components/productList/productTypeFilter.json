@@ -1,0 +1,20 @@
+{
+    "selector": "div.scrolly > div:first-of-type",
+    "children": {
+        "Header": {
+            "selector": "h4"
+        },
+        "Options": {
+            "isCollection": true,
+            "selector": "span > label",
+            "children": {
+                "Button": {
+                    "selector": "input[type = 'radio']"
+                },
+                "Label": {
+                    "selector": "span[ng-bind-html = 'item.title']"
+                }
+            }
+        }
+    }
+}

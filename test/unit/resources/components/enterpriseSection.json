@@ -1,0 +1,20 @@
+{
+    "selector": "section.ent-body",
+    "children": {
+        "Solutions": {
+            "isCollection": "true",
+            "selector": "div.ent-box",
+            "children": {
+                "Title": {
+                    "selector": "div.ent-box h2"
+                },
+                "Description": {
+                    "selector": "div.ent-box p"
+                },
+                "Button": {
+                    "selector": "div.ent-box a"
+                }
+            }            
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "selector": "#call",
+    "children": {
+        "Title": {
+            "selector": "#call div.panel-title > h2"
+        },
+        "Description": {
+            "selector": "#call div.panel-title > p"
+        },
+        "Online Request Link": {
+            "selector": "a[alt = 'Online Request']"
+        },
+        "Global Sales Contacts Link": {
+            "selector": "a[alt = 'Global Sales Contacts']"
+        },
+        "Customer Care Link": {
+            "selector": "a[alt = 'Customer Care']"
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "isCollection": true,
+    "selector": "div.search-result",
+    "children": {
+        "Product Title": {
+            "selector": "h4[ng-bind-html = 'product.title']"
+        },
+        "Product Description": {
+            "selector": "p[ng-bind-html = 'product.description']"
+        },
+        "Product Capacity": {
+            "isCollection": true,
+            "selector": "span.capacity-label"
+        },
+        "Button": {
+            "isCollection": true,
+            "selector": "a.btn"
+        }
+    }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "sandisk-framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "preinstall": "mkdir reports",
+    "postinstall": "webdriver-manager update",
+    "unit": "protractor ./test/unit/config/config.js",
+    "server": "./node_modules/.bin/webdriver-manager start",
+    "pretest": "rmdir /s /q reports && mkdir reports",
+    "test": "protractor ./test/e2e/config/config.js",
+    "report": "node ./reporter.js"
+  },
+  "dependencies": {
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "cucumber": "^3.2.1",
+    "cucumber-html-reporter": "^3.0.4",
+    "eslint": "^5.2.0",
+    "protractor": "^5.2.2",
+    "protractor-cucumber-framework": "^4.1.1",
+    "winston": "^3.1.0",
+    "yargs": "^12.0.2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

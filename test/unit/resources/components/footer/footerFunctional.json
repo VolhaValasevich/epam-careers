@@ -1,0 +1,26 @@
+{
+    "selector": "div.functionalfooter > footer",
+    "children": {
+        "Main Links Section": {
+            "selector": "div.main-links",
+            "children": {
+                "Main Links": {
+                    "selector": "div.main-links > ",
+                    "ref": ["components", "footer", "footerLinks.json"]
+                }
+            }
+        },
+        "Secondary Links Section": {
+            "selector": "div.secondary-links",
+            "children": {
+                "Secondary Links": {
+                    "selector": "div.secondary-links > ",
+                    "ref": ["components", "footer", "footerLinks.json"]
+                }
+            }
+        },
+        "Solutions Links": {
+            "ref": ["components", "footer", "solutionsLinks.json"]
+        }
+    }
+}

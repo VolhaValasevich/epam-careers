@@ -1,0 +1,11 @@
+{
+    "selector": "section.search",
+    "children": {
+        "Search Input": {
+            "selector": "input[name = 'q'].form-control"
+        },
+        "Search Submit Button": {
+            "selector": "button.btn-search"
+        }
+    }
+}

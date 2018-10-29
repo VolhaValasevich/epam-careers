@@ -1,0 +1,15 @@
+{
+    "isCollection": true,
+    "selector": "#dl-menu > ul > li > a", 
+    "children": {
+        "Submenu": {
+            "selector": "ul.dl-submenu",
+            "children": {
+                "Submenu Links": {
+                    "isCollection": true,
+                    "selector": "ul.dl-submenu > li > a"
+                }
+            }
+        }
+    }
+}

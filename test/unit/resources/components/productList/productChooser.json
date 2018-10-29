@@ -1,0 +1,14 @@
+{
+    "selector": "div.product-chooser",
+    "children": {
+        "Product Categories": {
+            "isCollection": true,
+            "selector": "div.product-category",
+            "children": {
+                "Category Title": {
+                    "selector": "h5.family-title"
+                }
+            }
+        }
+    }
+}

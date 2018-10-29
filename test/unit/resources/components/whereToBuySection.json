@@ -1,0 +1,20 @@
+{
+    "selector": "#where-to-buy",
+    "children": {
+        "Title": {
+            "selector": "#where-to-buy h2" 
+        },
+        "Description": {
+            "selector": "#where-to-buy h3"
+        },
+        "Select Boxes": {
+            "ref": ["components", "whereToBuy", "selectBoxes.json"]
+        },
+        "CheckBoxes": {
+            "ref": ["components", "whereToBuy", "checkBoxes.json"]
+        },
+        "Results Panel": {
+            "ref": ["components", "whereToBuy", "resultsPanel.json"]
+        }
+    }
+}

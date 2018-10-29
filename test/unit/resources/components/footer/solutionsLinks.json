@@ -1,0 +1,27 @@
+{
+    "selector": "div.solutions-links",
+    "children": {
+        "Stories Links": {
+            "isCollection": true,
+            "selector": "div.stories-links a"
+        },
+        "Facebook Icon": {
+            "selector": "span.icon-sd-facebook"
+        },
+        "Twitter Icon": {
+            "selector": "span.icon-sd-twitter"
+        },
+        "LinkedIn Icon": {
+            "selector": "span.icon-sd-linkedin"
+        },
+        "Instagram Icon": {
+            "selector": "span.icon-sd-instagram"
+        },
+        "Pinterest Icon": {
+            "selector": "span.icon-sd-pinterest"
+        },
+        "Search Container": {
+            "ref": ["components", "footer", "footerSearchContainer.json"]
+        }
+    }
+}

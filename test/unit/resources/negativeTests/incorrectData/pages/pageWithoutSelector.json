@@ -1,0 +1,9 @@
+{
+    "name": "page",
+    "url": "",
+    "children": {
+        "Header": {
+            "ref": "./components/header/header.json"
+        }
+    }
+}

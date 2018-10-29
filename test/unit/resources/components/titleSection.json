@@ -1,0 +1,11 @@
+{
+    "selector": "div.titlesection",
+    "children": {
+        "Title": {
+            "selector": "div.panel-title > h2"
+        },
+        "Description": {
+            "selector": "div.panel-title > p"
+        }
+    }
+}

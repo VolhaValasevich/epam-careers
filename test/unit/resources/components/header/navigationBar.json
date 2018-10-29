@@ -1,0 +1,9 @@
+{
+    "selector": "#navbar",
+    "children": {
+        "Navigation Links": {
+            "isCollection": true,
+            "selector": "div.nav-wrapper #bs-example-navbar-collapse-1 a"
+        }
+    }
+}

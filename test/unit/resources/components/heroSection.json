@@ -1,0 +1,14 @@
+{
+    "selector": "section.hero",
+    "children": {
+        "Title": {
+            "selector": "#hero-title > h1"
+        },
+        "Description": {
+            "selector": "#hero-title > p"
+        },
+        "Link": {
+            "selector": "#hero-title a"
+        }
+    }
+}

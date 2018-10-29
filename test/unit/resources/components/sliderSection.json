@@ -1,0 +1,24 @@
+{
+    "selector": "div.slider",
+    "children": {
+        "Slides": {
+            "isCollection": true,
+            "selector": "div.slide",
+            "children": {
+                "Title": {
+                    "selector": "h1"
+                },
+                "Description": {
+                    "selector": "p"
+                },
+                "Button": {
+                    "selector": "a.btn"
+                }
+            }
+        },
+        "Buttons": {
+            "isCollection": true,
+            "selector": "ul.slick-dots > li > button"
+        }
+    }
+}

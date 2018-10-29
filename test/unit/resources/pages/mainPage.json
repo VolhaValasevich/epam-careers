@@ -1,0 +1,25 @@
+{
+    "name": "Main Page",
+    "url": "",
+    "selector": "html",
+    "children": {
+        "Header": {
+            "ref": ["components", "header", "header.json"]
+        },
+        "Slider Section": {
+            "ref": ["components", "sliderSection.json"]
+        },
+        "Search Section": {
+            "ref": ["components", "searchSection.json"]
+        },
+        "Main Section": {
+            "ref": ["components", "mainSection.json"]
+        },
+        "Copyright Footer": {
+            "ref": ["components", "footer", "footerCopyright.json"]
+        },
+        "On Top Button": {
+            "ref": ["components", "onTopButton.json"]
+        }
+    }
+}
