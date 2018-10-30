@@ -6,7 +6,7 @@ Feature: Careers Page
         When I type ".net" in "Job Search Section > Search Form > Keyword Input"
         And I remember text of "Job Search Section > Search Form > Location Input > Selected Location" as "$defaultLocation"
         And I click "Job Search Section > Search Form > Skills Input"
-        And I wait until "Job Search Section > Search Form > Skills Input > Dropdown" is visible
+        And I wait until "Job Search Section > Search Form > Skills Input > Dropdown" is clickable
         And I click "Software Test Engineering" text in "Job Search Section > Search Form > Skills Input > Dropdown > Skills"
         And I click "Job Search Section > Search Form > Find Button"
         And I wait until "Search Results Section > Search Results #1" is present
@@ -14,8 +14,8 @@ Feature: Careers Page
         Then Text of "Job Header > Name" should contain "Test"
         And Text of "Job Header > Name" should contain ".NET"
         And Text of "Job Header > Locations #1" should contain "$defaultLocation"
-        And "About Job > Job Description" should be visible
-        And "About Job > Job Summary" should be visible
+        And "About Job > Description" should be visible
+        And "About Job > Summary" should be visible
 
     @negative
     Scenario Outline: User types an unfinished location name in job search form and the form autocompletes it
