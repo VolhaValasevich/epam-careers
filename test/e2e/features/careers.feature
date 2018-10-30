@@ -18,7 +18,7 @@ Feature: Careers Page
         And "About Job > Summary" should be visible
 
     @negative
-    Scenario Outline: User types an unfinished location name in job search form and the form autocompletes it
+    Scenario Outline: User types "<input>" in job search form and the form autocompletes it to <location>
         Given I open base url
         When I click "Job Search Section > Search Form > Location Input"
         And I type "<input>" in "Job Search Section > Search Form > Location Input > Dropdown > Input"

@@ -15,7 +15,7 @@ When(/^I click "([^"]*)" text in "([^"]*)"$/, (text, alias) => {
     text = memory.parseString(text);
     logger.info(`I click [${text}] text in [${alias}]`);
     return step.getElementFromCollectionByText(alias, text).then((el) => {
-        el.click();
+        return el.click();
     })
 });
 

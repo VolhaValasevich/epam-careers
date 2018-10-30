@@ -19,40 +19,29 @@ class StepFunctions {
     }
 
     expectedCondition(shouldBe) {
-        let expectedConditionFunction;
-        switch (shouldBe) {
-            case 'present':
-                expectedConditionFunction = EC.presenceOf.bind(EC);
-                break;
-            case 'clickable':
-                expectedConditionFunction = EC.elementToBeClickable.bind(EC);
-                break;
-            case 'visible':
-                expectedConditionFunction = EC.visibilityOf.bind(EC);
-                break;
-            case 'invisible':
-                expectedConditionFunction = EC.invisibilityOf.bind(EC);
-                break;
-            case 'selected':
-                expectedConditionFunction = EC.elementToBeSelected.bind(EC);
-                break;
-            case 'gone':
-                expectedConditionFunction = EC.stalenessOf.bind(EC);
-                break;
-            default:
-                throw new Error(`[${shouldBe}] is not an expected condition`);
+        const obj = {
+            present: EC.presenceOf.bind(EC),
+            clickable: EC.elementToBeClickable.bind(EC),
+            visible: EC.visibilityOf.bind(EC),
+            invisible: EC.invisibilityOf.bind(EC),
+            selected: EC.elementToBeSelected.bind(EC),
+            gone: EC.stalenessOf.bind(EC)
         }
-        return expectedConditionFunction;
+        if (!obj[shouldBe]) {
+            throw new Error(`[${shouldBe}] is not an expected condition`);
+        }
+        return obj[shouldBe];
     }
 
-    waitUntil(alias, shouldBe) {
+    async waitUntil(alias, shouldBe) {
         logger.action(`Waiting until [${alias}] is ${shouldBe}`);
         const expectedConditionFunction = this.expectedCondition(shouldBe);
-        return this.helper.getElement(alias).then((el) => {
-            return browser.wait(expectedConditionFunction(el), 30000);
-        }).catch((err) => {
+        try {
+            const el = await this.helper.getElement(alias)
+            await browser.wait(expectedConditionFunction(el), 30000);
+        } catch (err) {
             throw new Error(`Cannot wait until [${alias}] is ${shouldBe} - ${err.message}`);
-        }) 
+        }
     }
 
     sendKeys(alias, keys) {
@@ -62,7 +51,7 @@ class StepFunctions {
             return el.sendKeys(keys);
         }).catch((err) => {
             throw new Error(`Cannot send keys to [${alias}] - ${err.message}`);
-        })  
+        })
     }
 
     getText(alias) {
@@ -72,7 +61,7 @@ class StepFunctions {
             return el.getText();
         }).catch((err) => {
             throw new Error(`Cannot get text of [${alias}] - ${err.message}`);
-        })  
+        })
     }
 
     getAttribute(alias, attribute) {
@@ -92,7 +81,7 @@ class StepFunctions {
             return el.click();
         }).catch((err) => {
             throw new Error(`Cannot click on [${alias}] - ${err.message}`);
-        }) 
+        })
     }
 
     getNumberOfElements(alias) {
@@ -102,12 +91,12 @@ class StepFunctions {
             return el.length;
         }).catch((err) => {
             throw new Error(`Cannot get number of [${alias}] - ${err.message}`);
-        }) 
+        })
     }
 
     getElementFromCollectionByText(alias, text) {
         logger.action(`Getting element with [${text}] text from [${alias}]`);
-        return this.helper.getElement(alias).then(async(collection) => {
+        return this.helper.getElement(alias).then(async (collection) => {
             if (!collection.length) throw new Error(`Cannot get element with text [${text}] - [${alias}] is not a collection!`);
             for (let i = 0; i < collection.length; i++) {
                 const elementtext = await collection[i].getText();
