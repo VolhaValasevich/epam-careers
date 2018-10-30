@@ -1,7 +1,8 @@
 'use strict';
-let {Then, When, Given} = require('cucumber');
+let {Then, When, Given, setDefaultTimeout} = require('cucumber');
 const memory = browser.params.MEMORY;
 const logger = require('../util/logger').logger;
+setDefaultTimeout(60 * 1000);
 
 When(/^I wait "([^"]*)" seconds$/, (waitTime) => {
     waitTime = memory.parseString(waitTime);
