@@ -14,6 +14,8 @@ Feature: Careers Page
         Then Text of "Job Header > Name" should contain "Test"
         And Text of "Job Header > Name" should contain ".NET"
         And Text of "Job Header > Locations #1" should contain "$defaultLocation"
+        And "About Job > Job Description" should be visible
+        And "About Job > Job Summary" should be visible
 
     @negative
     Scenario Outline: User types an unfinished location name in job search form and the form autocompletes it
@@ -21,7 +23,10 @@ Feature: Careers Page
         When I click "Job Search Section > Search Form > Location Input"
         And I type "<input>" in "Job Search Section > Search Form > Location Input > Dropdown > Input"
         And I type "ENTER" in "Job Search Section > Search Form > Location Input > Dropdown > Input"
-        Then Text of "Job Search Section > Search Form > Location Input > Selected Location" should equal "<location>"
+        And I click "Job Search Section > Search Form > Find Button"
+        And I wait until "Search Results Section > Search Results #1" is present
+        And I click "Search Results Section > Search Results #1 > Apply Button"
+        Then Text of "Job Header > Locations #1" should contain "<location>"
 
         Examples:
             | input | location |
@@ -32,7 +37,7 @@ Feature: Careers Page
             | vi    | Vitebsk  |
 
     @negative
-    Scenario: User searches for an unexistent keyword and sees an error message
+    Scenario: User searches for an inexistent keyword and sees an error message
         Given I open base url
         When I type "!@#$%" in "Job Search Section > Search Form > Keyword Input"
         And I click "Job Search Section > Search Form > Find Button"
