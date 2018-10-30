@@ -8,9 +8,9 @@ const logger = require('../util/logger').logger;
 Then(/^"([^"]*)" should( not)? be visible$/, async (alias, notArg) => {
     alias = memory.parseString(alias);
     logger.info(`I check if [${alias}] is visible`);
-    notArg = notArg ? 'not' : 'be';
+    notArg = notArg ? 'not' : '';
     let result = await step.isElementPresent(alias);
-    return expect(result).to[notArg].equal(!notArg);
+    return expect(result).to.equal(!notArg);
 });
 
 Then(/^Count of "([^"]*)" should( not)? be "([^"]*)"$/, async (alias, notArg, expectedNumber) => {
@@ -27,7 +27,7 @@ Then(/^Text of "([^"]*)" should( not)? contain "([^"]*)"$/, async (alias, notArg
     alias = memory.parseString(alias);
     textToContain = memory.parseString(textToContain);
     logger.info(`I check if text of [${alias}] contains [${textToContain}]`);
-    notArg = notArg ? 'not' : '';
+    notArg = notArg ? 'not' : 'be';
     let elementText = await step.getText(alias);
     return expect(elementText).to[notArg].contain(textToContain);
 });
