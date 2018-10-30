@@ -6,7 +6,9 @@ class Memory {
     }
 
     parseString(string) {
-        if (typeof string === 'string' && string.match(/^\$[\w\s-]+/)) return this.get(string.substring(1));
+        if (typeof string === 'string' && string.match(/^\$[\w\s-]+/)) {
+            return this.get(string.substring(1));
+        }
         else return string;
     }
 
