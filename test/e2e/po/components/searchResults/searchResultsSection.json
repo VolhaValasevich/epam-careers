@@ -16,6 +16,9 @@
                 }
             }
         },
+        "Error Message": {
+            "selector": "div.search-result__error-message"
+        },
         "Search Results": {
             "ref": ["components", "searchResults", "searchResults.json"]
         }
