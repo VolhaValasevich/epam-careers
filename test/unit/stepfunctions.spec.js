@@ -72,7 +72,7 @@ describe('Step Functions', () => {
         it('chould click on an element', async () => {
             await step.click('Product List > Results Panel > Search Results #2 > Button #2');
             const url = await browser.getCurrentUrl();
-            expect(url).to.be.eql('https://www.sandisk.com/home/mobile-device-storage/ixpand-mini')
+            expect(url).to.be.eql('https://www.sandisk.com/home/usb-flash/extremepro-usb')
         })
 
 
