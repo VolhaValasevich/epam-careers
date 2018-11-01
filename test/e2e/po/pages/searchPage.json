@@ -4,10 +4,10 @@
     "selector": "html",
     "children": {
         "Job Search Form": {
-            "ref": ["components", "jobSearchForm", "searchForm.json"]
+            "ref": "components/jobSearchForm/searchForm.json"
         },
         "Search Results Section": {
-            "ref": ["components", "searchResults", "searchResultsSection.json"]
+            "ref": "components/searchResults/searchResultsSection.json"
         }
     }
 }

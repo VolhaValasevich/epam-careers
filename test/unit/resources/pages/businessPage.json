@@ -4,28 +4,13 @@
     "selector": "html",
     "children": {
         "Header": {
-            "ref": ["components", "header", "header.json"]
-        },
-        "Hero Section": {
-            "ref": ["components", "heroSection.json"]
-        },
-        "Title Section": {
-            "ref": ["components", "titleSection.json"]
-        },
-        "Enterprise Section": {
-            "ref": ["components", "enterpriseSection.json"]
-        },
-        "Contacts Section": {
-            "ref": ["components", "contactsSection.json"]
+            "ref": "./components/header/header.json"
         },
         "Functional Footer": {
-            "ref": ["components", "footer", "footerFunctional.json"]
+            "ref": "./components/footer/footerFunctional.json"
         },
         "Copyright Footer": {
-            "ref": ["components", "footer", "footerCopyright.json"]
-        },
-        "On Top Button": {
-            "ref": ["components", "onTopButton.json"]
+            "ref": "./components/footer/footerCopyright.json"
         }
     }
 }

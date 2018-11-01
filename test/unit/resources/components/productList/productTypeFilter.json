@@ -4,17 +4,27 @@
         "Header": {
             "selector": "h4"
         },
-        "Options": {
+        "Mobile Storage Button": {
+            "selector": "input[name = '36']"
+        },
+        "Cards and Readers Button": {
+            "selector": "input[name = '39']"
+        },
+        "USB Button": {
+            "selector": "input[name = '42']"
+        },
+        "SSD Button": {
+            "selector": "input[name = '45']"
+        },
+        "MP3 Players Button": {
+            "selector": "input[name = '48']"
+        },
+        "Featured Items Button": {
+            "selector": "input[name = '51']"
+        },
+        "Product Type Labels": {
             "isCollection": true,
-            "selector": "span > label",
-            "children": {
-                "Button": {
-                    "selector": "input[type = 'radio']"
-                },
-                "Label": {
-                    "selector": "span[ng-bind-html = 'item.title']"
-                }
-            }
+            "selector": "span[ng-bind-html = 'family.title']"
         }
     }
 }

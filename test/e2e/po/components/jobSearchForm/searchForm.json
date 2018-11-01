@@ -5,10 +5,10 @@
             "selector": "#new_form_job_search_1445745853_copy-keyword"
         },
         "Location Input": {
-            "ref": ["components", "jobSearchForm", "locationInput.json"]
+            "ref": "components/jobSearchForm/locationInput.json"
         },
         "Skills Input": {
-            "ref": ["components", "jobSearchForm", "skillsInput.json"]
+            "ref": "components/jobSearchForm/skillsInput.json"
         },
         "Find Button": {
             "selector": "button.recruiting-search__submit"

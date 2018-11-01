@@ -4,16 +4,13 @@
     "selector": "html",
     "children": {
         "Header": {
-            "ref": ["components", "header", "header.json"]
+            "ref": "./components/header/header.json"
         },
         "Functional Footer": {
-            "ref": ["components", "footer", "footerFunctional.json"]
+            "ref": "./components/footer/footerFunctional.json"
         },
         "Copyright Footer": {
-            "ref": ["components", "footer", "footerCopyright.json"]
-        },
-        "On Top Button": {
-            "ref": ["components", "onTopButton.json"]
+            "ref": "./components/footer/footerCopyright.json"
         }
     }
 }

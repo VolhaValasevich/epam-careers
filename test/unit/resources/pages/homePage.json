@@ -4,25 +4,19 @@
     "selector": "html",
     "children": {
         "Header": {
-            "ref": ["components", "header", "header.json"]
+            "ref": "./components/header/header.json"
         },
         "Slider Section": {
-            "ref": ["components", "sliderSection.json"]
+            "ref": "./components/sliderSection.json"
         },
         "Product List": {
-            "ref": ["components", "productList", "productList.json"]
-        },
-        "Subscribe Section": {
-            "ref": ["components", "subscribeSection.json"]
+            "ref": "./components/productList/productList.json"
         },
         "Functional Footer": {
-            "ref": ["components", "footer", "footerFunctional.json"]
+            "ref": "./components/footer/footerFunctional.json"
         },
         "Copyright Footer": {
-            "ref": ["components", "footer", "footerCopyright.json"]
-        },
-        "On Top Button": {
-            "ref": ["components", "onTopButton.json"]
+            "ref": "./components/footer/footerCopyright.json"
         }
     }
 }

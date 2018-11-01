@@ -1,9 +1,0 @@
-{
-    "selector": "section.small-top",
-    "children": {
-        "Products Links": {
-            "isCollection": true,
-            "selector": "a.products-link h2"
-        }
-    }
-}

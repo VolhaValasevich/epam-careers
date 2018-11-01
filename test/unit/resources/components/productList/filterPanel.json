@@ -2,10 +2,10 @@
     "selector": "div.filter-panel > div.scrolly",
     "children": {
         "Product Type Filter": {
-            "ref": ["components", "productList", "productTypeFilter.json"]
+            "ref": "./components/productList/productTypeFilter.json"
         },
         "Option Filter": {
-            "ref": ["components", "productList", "optionFilter.json"]
+            "ref": "./components/productList/optionFilter.json"
         }
     }    
 }

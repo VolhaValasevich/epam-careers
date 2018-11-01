@@ -2,16 +2,16 @@
     "selector": "div.productlist",
     "children": {
         "Product Chooser": {
-            "ref": ["components", "productList", "productChooser.json"]
+            "ref": "./components/productList/productChooser.json"
         },
         "Results Bar": {
-            "ref": ["components", "productList", "resultsBar.json"]
+            "ref": "./components/productList/resultsBar.json" 
         },
         "Filter Panel": {
-            "ref": ["components", "productList", "filterPanel.json"]
+            "ref": "./components/productList/filterPanel.json"
         },
         "Results Panel": {
-            "ref": ["components", "productList", "resultsPanel.json"]
+            "ref": "./components/productList/resultsPanel.json"
         }
     }
 }

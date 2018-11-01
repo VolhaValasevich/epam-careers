@@ -2,7 +2,7 @@
     "selector": "footer.copyright",
     "children": {
         "Copyright Links Bar": {
-            "ref": ["components", "footer", "copyrightLinksBar.json"]
+            "ref": "./components/footer/copyrightLinksBar.json"
         },
         "Copyright Text Bar": {
             "selector": "div.copyright-text",

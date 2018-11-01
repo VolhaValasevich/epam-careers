@@ -2,10 +2,10 @@
     "selector": "section.section--hide-on-mobile",
     "children": {
         "Search Form": {
-            "ref": ["components", "jobSearchForm", "searchForm.json"]
+            "ref": "components/jobSearchForm/searchForm.json"
         },
         "Selected Items": {
-            "ref": ["components", "jobSearchForm", "selectedItems.json"]
+            "ref": "components/jobSearchForm/selectedItems.json"
         }
     }
 }

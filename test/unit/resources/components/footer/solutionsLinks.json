@@ -3,7 +3,7 @@
     "children": {
         "Stories Links": {
             "isCollection": true,
-            "selector": "div.stories-links a"
+            "selector": "div.stories-links > div"
         },
         "Facebook Icon": {
             "selector": "span.icon-sd-facebook"
@@ -21,7 +21,7 @@
             "selector": "span.icon-sd-pinterest"
         },
         "Search Container": {
-            "ref": ["components", "footer", "footerSearchContainer.json"]
+            "ref": "./components/footer/footerSearchContainer.json"
         }
     }
 }

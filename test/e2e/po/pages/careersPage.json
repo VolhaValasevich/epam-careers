@@ -4,7 +4,7 @@
     "selector": "html",
     "children": {
         "Job Search Section": {
-            "ref": ["components", "jobSearchForm", "jobSearchSection.json"]
+            "ref": "components/jobSearchForm/jobSearchSection.json"
         }
     }
 }

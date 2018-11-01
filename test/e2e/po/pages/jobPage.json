@@ -4,10 +4,10 @@
     "selector": "html",
     "children": {
         "Job Header": {
-            "ref": ["components", "jobDescription", "header.json"]
+            "ref": "components/jobDescription/header.json"
         },
         "About Job": {
-            "ref": ["components", "jobDescription", "jobDescription.json"]
+            "ref": "components/jobDescription/jobDescription.json"
         }
     }
 }

@@ -6,7 +6,7 @@
             "children": {
                 "Main Links": {
                     "selector": "div.main-links > ",
-                    "ref": ["components", "footer", "footerLinks.json"]
+                    "ref": "./components/footer/footerLinks.json"
                 }
             }
         },
@@ -15,12 +15,12 @@
             "children": {
                 "Secondary Links": {
                     "selector": "div.secondary-links > ",
-                    "ref": ["components", "footer", "footerLinks.json"]
+                    "ref": "./components/footer/footerLinks.json"
                 }
             }
         },
         "Solutions Links": {
-            "ref": ["components", "footer", "solutionsLinks.json"]
+            "ref": "./components/footer/solutionsLinks.json"
         }
     }
 }

@@ -10,8 +10,7 @@ class POCollector {
     getReferences(dir, obj) {
         if (obj.ref) {
             const masterselector = obj.selector;
-            obj.ref.unshift(dir);
-            obj = this.requireJson(path.resolve(...obj.ref));
+            obj = this.requireJson(path.resolve(dir, obj.ref));
             if (masterselector) {
                 obj.selector = masterselector + obj.selector;
             }
