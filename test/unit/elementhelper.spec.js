@@ -67,6 +67,17 @@ describe('Unit tests for Element Helper', () => {
         return expect(helper.getElement('Header > nonexistent')).to.eventually.be.rejectedWith(Error, 'No child element [nonexistent] in { selector: \'header\',\n  children: { \'Country Bar\': [Object], \'Navigation Bar\': [Object] } }');
     })
 
+    it('should complete an unfinished element chain', () => {
+        const result = helper.findElementInChain(helper.masterPO['/about'], 'Copyright Links');
+        expect(result).to.eql('Copyright Footer > Copyright Links Bar > Copyright Links');
+    })
+
+    it('should search for an element by an unfinished chain', async () => {
+        let element = await helper.getElement('Header > Global Icon');
+        const tag = await element.getTagName();
+        expect(tag).to.be.eql('span')
+    })
+
     describe('tests that change url', () => {
 
         afterEach(async () => {
